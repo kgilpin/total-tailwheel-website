@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -19,13 +18,13 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#F5F5F5]">
       <Navbar />
       <Hero />
       
       <section id="about" className="pt-20 pb-8">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <p className="text-lg text-foreground/80 leading-relaxed">
               Are you looking for something different? How about flight training in a beautiful,
               hangared, fully restored tailwheel airplane? N3472C, our <strong>1954 Cessna 170B</strong>, 
@@ -39,13 +38,13 @@ const Index = () => {
         </div>
       </section>
       
-      <section id="features" className="py-16 bg-secondary/5 paper-texture">
+      <section id="features" className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="section-title">Why Choose N3472C?</h2>
+          <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 className="section-title text-center md:text-left">Why Choose N3472C?</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <div className="flex items-start mb-4">
                   <Plane className="text-primary mr-4 mt-1" size={24} />
                   <h3 className="feature-title">Authentic Tailwheel Experience</h3>
@@ -56,7 +55,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <div className="flex items-start mb-4">
                   <Compass className="text-primary mr-4 mt-1" size={24} />
                   <h3 className="feature-title">Modern Avionics</h3>
@@ -68,7 +67,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <div className="flex items-start mb-4">
                   <Navigation className="text-primary mr-4 mt-1" size={24} />
                   <h3 className="feature-title">Great for Exploring New England</h3>
@@ -79,7 +78,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <div className="flex items-start mb-4">
                   <Shield className="text-primary mr-4 mt-1" size={24} />
                   <h3 className="feature-title">Stepping Stone to Your Own Taildragger</h3>
@@ -92,7 +91,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="md:col-span-2 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="md:col-span-2 p-6 rounded-lg border border-secondary/30">
                 <div className="flex items-start mb-4">
                   <MapPin className="text-primary mr-4 mt-1" size={24} />
                   <h3 className="feature-title">Based at a GA-friendly Airport</h3>
@@ -103,7 +102,7 @@ const Index = () => {
                     href="https://www.google.com/maps/place/Minute+Man+Air+Field/@42.461525,-71.5194206,17z/data=!3m1!4b1!4m6!3m5!1s0x89e392516bf03585:0xfeb73f580d5ce105!8m2!3d42.4615211!4d-71.5168457!16zL20vMGN0ejB4?entry=ttu" 
                     target="_blank" 
                     rel="noreferrer"
-                    className="mx-1 text-primary hover:text-primary/80 transition-colors"
+                    className="mx-1 text-[#7bafd4] hover:text-[#7bafd4]/80 transition-colors"
                   >
                     Minute Man Air Field in Stow, MA
                   </a>. 
@@ -112,7 +111,7 @@ const Index = () => {
                     href="https://fourthandfield.com/" 
                     target="_blank" 
                     rel="noreferrer"
-                    className="mx-1 text-primary hover:text-primary/80 transition-colors"
+                    className="mx-1 text-[#7bafd4] hover:text-[#7bafd4]/80 transition-colors"
                   >
                     restaurant on the field
                   </a>.
@@ -123,13 +122,13 @@ const Index = () => {
         </div>
       </section>
       
-      <section id="equipment" className="py-16">
+      <section id="equipment" className="py-16 bg-[#D2B48C]/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="section-title">State-of-the-Art Equipment</h2>
+          <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 className="section-title text-center md:text-left">State-of-the-Art Equipment</h2>
             
             <div className="space-y-8">
-              <div className="bg-secondary/10 p-6 rounded-lg">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <h3 className="feature-title">Garmin 650 Nav/Comm:</h3>
                 <p className="text-foreground/80">
                   Touch-screen, WAAS, GPS nav/comm ensures precise and reliable navigation on every flight.
@@ -137,7 +136,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="bg-secondary/10 p-6 rounded-lg">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <h3 className="feature-title">Dual Garmin 275 Attitude Indicator + HSI:</h3>
                 <p className="text-foreground/80">
                   Experience enhanced situational awareness with these cutting-edge flight instruments, combining traditional
@@ -146,14 +145,14 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="bg-secondary/10 p-6 rounded-lg">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <h3 className="feature-title">Garmin GTX 345 Transponder</h3>
                 <p className="text-foreground/80">
                   A fully modern transponder with ADS-B in and out.
                 </p>
               </div>
               
-              <div className="bg-secondary/10 p-6 rounded-lg">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <h3 className="feature-title">IFR Capability:</h3>
                 <p className="text-foreground/80">
                   N3472C is equipped for Instrument Flight Rules (IFR) flying, allowing you to train in a wider range of
@@ -161,7 +160,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="bg-secondary/10 p-6 rounded-lg">
+              <div className="p-6 rounded-lg border border-secondary/30">
                 <h3 className="feature-title">LED Lighting</h3>
                 <p className="text-foreground/80">
                   Visibility is an important component of safe flying. N3472C is equipped with LED landing, taxi, 
@@ -173,39 +172,39 @@ const Index = () => {
         </div>
       </section>
       
-      <section id="training" className="py-16 bg-secondary/5 paper-texture">
+      <section id="training" className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="section-title">What Training is Available?</h2>
+          <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 className="section-title text-center md:text-left">What Training is Available?</h2>
             
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="p-8 rounded-lg border border-secondary/30">
               <p className="text-lg text-foreground/80 mb-6">
                 You've finished your primary training and you're a private pilot. Now you're ready to take the
                 next steps in your aviation journey, including:
               </p>
               
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <li className="flex items-center p-4 bg-secondary/10 rounded-lg">
-                  <Plane size={20} className="text-primary mr-3" />
+              <div className="flex flex-wrap gap-4">
+                <div className="training-option">
+                  <Plane size={20} className="text-white mr-3" />
                   <span>Tailwheel endorsement</span>
-                </li>
-                <li className="flex items-center p-4 bg-secondary/10 rounded-lg">
-                  <Compass size={20} className="text-primary mr-3" />
+                </div>
+                <div className="training-option">
+                  <Compass size={20} className="text-white mr-3" />
                   <span>Instrument pilot</span>
-                </li>
-                <li className="flex items-center p-4 bg-secondary/10 rounded-lg">
-                  <Shield size={20} className="text-primary mr-3" />
+                </div>
+                <div className="training-option">
+                  <Shield size={20} className="text-white mr-3" />
                   <span>Commercial pilot</span>
-                </li>
-                <li className="flex items-center p-4 bg-secondary/10 rounded-lg">
-                  <Compass size={20} className="text-primary mr-3" />
+                </div>
+                <div className="training-option">
+                  <Compass size={20} className="text-white mr-3" />
                   <span>CFI</span>
-                </li>
-                <li className="flex items-center p-4 bg-secondary/10 rounded-lg col-span-1 md:col-span-2">
-                  <Navigation size={20} className="text-primary mr-3" />
+                </div>
+                <div className="training-option">
+                  <Navigation size={20} className="text-white mr-3" />
                   <span>... and beyond</span>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -255,14 +254,14 @@ const Index = () => {
         </div>
       </section>
       
-      <section id="team" className="py-16 bg-secondary/5 paper-texture">
+      <section id="team" className="py-16 bg-[#D2B48C]/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="section-title">Meet Our Team</h2>
+          <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 className="section-title text-center md:text-left">Meet Our Team</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bio-card">
-                <h3 className="text-xl font-serif font-medium text-primary mb-4">Kevin Gilpin, Owner</h3>
+              <div className="bio-card border border-secondary/30">
+                <h3 className="text-xl font-medium text-[#8C5841] mb-4">Kevin Gilpin, Owner</h3>
                 <p className="text-foreground/80 leading-relaxed">
                   Kevin is the owner of Total Tailwheel. He learned to fly in 2017 and soon after he bought
                   N3472C. Perhaps like you, he was looking for something different. N3472 offered him the opportunity
@@ -273,8 +272,8 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="bio-card">
-                <h3 className="text-xl font-serif font-medium text-primary mb-4">Matt Crane, Instructor</h3>
+              <div className="bio-card border border-secondary/30">
+                <h3 className="text-xl font-medium text-[#8C5841] mb-4">Matt Crane, Instructor</h3>
                 <p className="text-foreground/80 leading-relaxed">
                   Matt has been flying since 1984, when he took his first GA flight in a Royal Air Force DeHavilland Chipmunk.
                   Fascinated with the smell of Avgas, oil and leather, and hypnotized by the old taildragger's sinuous taxiing,

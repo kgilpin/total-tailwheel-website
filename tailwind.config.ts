@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
+				sans: ['Montserrat', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
 			},
 			colors: {
@@ -57,6 +57,9 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				classicText: '#8F7C66', // Classic text color
+				thirdTitle: '#8C5841', // Third title color
+				title: '#7E2F1A', // Title color
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -95,6 +98,9 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out forwards'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			}
 		}
 	},

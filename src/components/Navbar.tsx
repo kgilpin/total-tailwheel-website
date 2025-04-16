@@ -24,10 +24,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <span className="font-serif text-xl font-medium text-primary">Total Tailwheel</span>
+          <span className="text-xl font-medium text-primary">Total Tailwheel</span>
         </div>
 
         {/* Desktop menu */}
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* Mobile menu dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white/95 border-t border-gray-200 py-4 animate-fade-in">
+        <div className="md:hidden bg-white border-t border-gray-200 py-4 animate-fade-in">
           <div className="container mx-auto px-4 flex flex-col space-y-3">
             <button onClick={() => scrollToSection('about')} className="text-left py-2 px-4 hover:bg-secondary/30 rounded transition-colors">About</button>
             <button onClick={() => scrollToSection('features')} className="text-left py-2 px-4 hover:bg-secondary/30 rounded transition-colors">Why Choose Us</button>

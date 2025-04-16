@@ -10,11 +10,11 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center paper-texture pt-16 bg-secondary/5">
+    <div className="relative min-h-screen flex items-center bg-gradient-to-b from-white to-gray-100 pt-16">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="flex flex-col-reverse md:flex-row items-center">
           <div className="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0 md:pr-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-primary leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-primary leading-tight">
               Total Tailwheel
             </h1>
             <p className="text-xl md:text-2xl text-foreground/60 mt-4 font-light">
@@ -43,9 +43,9 @@ const Hero = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-secondary/30 blur-xl z-0"></div>
+              <div className="absolute -inset-4 rounded-full bg-[#D2B48C]/30 blur-xl z-0"></div>
               <img 
-                src="./assets/images/N3472C.png" 
+                src="./lovable-uploads/2ca92fa9-69a7-4c59-97d3-5f5b7eea759a.png" 
                 alt="Cessna 170B N3472C" 
                 className="relative z-10 max-w-full rounded-lg shadow-lg transform hover:scale-[1.02] transition-transform duration-500 ease-in-out"
               />
